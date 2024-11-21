@@ -91,7 +91,7 @@ function loyaltyPoints(purchaseAmount) {
 }
 
 app.get('/loyalty-points', (req, res) => {
-  let purchaseAmount = parseFloat(req.query.amount);
+  let purchaseAmount = parseFloat(req.query.purchaseAmount);
   res.send(loyaltyPoints(purchaseAmount));
 });
 
